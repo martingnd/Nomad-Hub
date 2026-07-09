@@ -35,7 +35,7 @@ export default function PreBookingForm({
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <TextField label="Nombre de personnes" name="nb_personnes" type="number" />
-        <TextField label="Dates souhaitées" name="dates" placeholder="ex. 14–20 septembre 2026" />
+        <TextField label="Dates souhaitées" name="dates" placeholder="ex. 14-20 septembre 2026" />
       </div>
       <SelectField
         label="Vous êtes"

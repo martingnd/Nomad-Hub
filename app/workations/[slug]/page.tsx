@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import PageShell from "../../components/layout/PageShell";
 import PlaceholderPhoto from "../../components/home/PlaceholderPhoto";
+import PhotoCarousel from "../../components/workations/PhotoCarousel";
 import PreBookingForm from "../../components/workations/PreBookingForm";
 import { WORKATIONS, getWorkationBySlug, formatDateRange } from "@/lib/workations";
 
@@ -14,7 +16,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const workation = getWorkationBySlug(params.slug);
   if (!workation) return {};
   return {
-    title: `${workation.name} — Workation ${workation.city} | Nomad'Hub`,
+    title: `${workation.name} - Workation ${workation.city} | Nomad'Hub`,
     description: workation.description.slice(0, 155),
   };
 }
@@ -37,8 +39,8 @@ export default function WorkationDetailPage({ params }: { params: { slug: string
 
   return (
     <PageShell>
-      <div className="border-b border-brown/10 bg-beige">
-        <div className="mx-auto max-w-site px-6 pb-3 pt-6 text-[13px] text-brown/60 md:px-12">
+      <div className="border-b border-cream/20 bg-brown">
+        <div className="mx-auto max-w-site px-6 pb-3 pt-6 text-[13px] text-cream/75 md:px-12">
           <Link href="/workations" className="hover:underline">
             Workations
           </Link>{" "}
@@ -69,7 +71,7 @@ export default function WorkationDetailPage({ params }: { params: { slug: string
                 {workation.city} · {workation.region}
               </p>
             </div>
-            <div className="rounded-2xl bg-white/70 px-6 py-4 text-right">
+            <div className="rounded-2xl bg-cream px-6 py-4 text-right">
               <p className="text-[11px] uppercase tracking-wide text-brown/50">
                 {workation.priceIsEstimate ? "Estimation / personne" : "À partir de / personne"}
               </p>
@@ -80,11 +82,16 @@ export default function WorkationDetailPage({ params }: { params: { slug: string
             </div>
           </div>
 
-          <div className="mt-8 h-[360px] overflow-hidden rounded-[24px]">
-            <PlaceholderPhoto caption={workation.photoCaption} />
+          <div className="relative mt-8 h-[720px] overflow-hidden rounded-[24px]">
+            <PhotoCarousel
+              photos={workation.photos}
+              fallbackCaption={workation.photoCaption}
+              alt={workation.photoCaption}
+              autoplay
+            />
           </div>
 
-          <div className="mt-8 grid grid-cols-2 gap-6 rounded-2xl bg-white/60 p-6 sm:grid-cols-4">
+          <div className="mt-8 grid grid-cols-2 gap-6 rounded-2xl bg-cream p-6 sm:grid-cols-4">
             <InfoStat label="Dates" value={formatDateRange(workation.dateStart, workation.dateEnd)} />
             <InfoStat label="Capacité" value={`${workation.capacity} personnes`} />
             <InfoStat
@@ -114,6 +121,20 @@ export default function WorkationDetailPage({ params }: { params: { slug: string
                 ))}
               </ul>
             </section>
+
+            <div className="relative h-[280px] overflow-hidden rounded-[22px]">
+              {workation.destinationPhoto ? (
+                <Image
+                  src={workation.destinationPhoto}
+                  alt={`Lieu emblématique près de ${workation.city}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover"
+                />
+              ) : (
+                <PlaceholderPhoto caption={`Photo à venir - lieu emblématique près de ${workation.city}`} />
+              )}
+            </div>
 
             <section>
               <h2 className="font-serif text-2xl font-bold text-brown">Programme indicatif</h2>
@@ -177,7 +198,7 @@ export default function WorkationDetailPage({ params }: { params: { slug: string
               {isConfirmed ? "Réserver ma place" : "Candidater à ce séjour"}
             </h2>
             <p className="mt-2 text-[13.5px] text-brown/60">
-              Pré-réservation sans paiement en ligne — nous revenons vers vous pour confirmer.
+              Pré-réservation sans paiement en ligne - nous revenons vers vous pour confirmer.
             </p>
             <div className="mt-5">
               <PreBookingForm workationName={workation.name} ctaLabel={ctaLabel} />

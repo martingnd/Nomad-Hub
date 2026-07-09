@@ -122,7 +122,7 @@ export default function PricingCard({
               f.included ? "text-brown/80" : "text-brown/35"
             }`}
           >
-            <span className={f.included ? "text-sage" : "text-brown/25"}>{f.included ? "✓" : "–"}</span>
+            <span className={f.included ? "text-sage" : "text-brown/25"}>{f.included ? "✓" : "-"}</span>
             {f.label}
           </li>
         ))}

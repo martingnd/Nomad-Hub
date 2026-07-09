@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LegalLayout from "../components/layout/LegalLayout";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité — Nomad'Hub",
+  title: "Politique de confidentialité - Nomad'Hub",
   description: "Politique de confidentialité et protection des données personnelles du site Nomad'Hub (RGPD).",
 };
 

@@ -8,7 +8,7 @@ export default function ContactForm() {
     <FacadeForm
       submitLabel="Envoyer le message"
       successTitle="Message envoyé !"
-      successBody="Merci de nous avoir contactés — notre équipe vous répond sous 48h."
+      successBody="Merci de nous avoir contactés - notre équipe vous répond sous 48h."
     >
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <TextField label="Prénom" name="prenom" />

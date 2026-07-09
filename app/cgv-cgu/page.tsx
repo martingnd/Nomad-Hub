@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LegalLayout from "../components/layout/LegalLayout";
 
 export const metadata: Metadata = {
-  title: "CGV / CGU — Nomad'Hub",
+  title: "CGV / CGU - Nomad'Hub",
   description: "Conditions générales de vente et d'utilisation du site Nomad'Hub.",
 };
 

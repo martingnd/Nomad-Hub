@@ -49,15 +49,15 @@ function FooterColumn({
 export default function Footer() {
   return (
     <div className="bg-beige">
-      <div className="mx-auto max-w-site px-6 pb-10 pt-16 md:px-12">
-        <div className="grid grid-cols-1 gap-10 border-b border-brown/15 pb-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div className="mx-auto max-w-site px-6 pb-8 pt-10 md:px-12">
+        <div className="grid grid-cols-1 gap-8 border-b border-brown/15 pb-8 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div className="flex items-start">
             <Image
               src="/logo/nomadhub-logo-full.png"
-              alt="Nomad'Hub — Work. Connect. Explore."
-              width={200}
-              height={200}
-              className="h-[200px] w-[200px] object-contain"
+              alt="Nomad'Hub - Work. Connect. Explore."
+              width={140}
+              height={140}
+              className="h-[140px] w-[140px] object-contain"
             />
           </div>
           <FooterColumn title="EXPLORER" links={EXPLORE_LINKS} />
@@ -65,7 +65,7 @@ export default function Footer() {
           <FooterColumn title="LÉGAL" links={LEGAL_LINKS} />
         </div>
         <div className="pt-6 text-[13px] text-brown/55">
-          © 2026 Nomad&apos;Hub — Tous droits réservés.
+          © 2026 Nomad&apos;Hub - Tous droits réservés.
         </div>
       </div>
     </div>

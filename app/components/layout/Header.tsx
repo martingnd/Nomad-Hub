@@ -38,7 +38,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="whitespace-nowrap text-[11.5px] font-semibold text-brown transition-colors hover:text-terracotta"
+              className="whitespace-nowrap text-[13.5px] font-semibold text-brown transition-colors hover:text-terracotta"
             >
               {link.label}
             </Link>

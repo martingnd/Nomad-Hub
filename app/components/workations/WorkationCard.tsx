@@ -1,5 +1,5 @@
 import Link from "next/link";
-import PlaceholderPhoto from "../home/PlaceholderPhoto";
+import PhotoCarousel from "./PhotoCarousel";
 import { formatDateRange, type Workation } from "@/lib/workations";
 
 export default function WorkationCard({ workation }: { workation: Workation }) {
@@ -8,8 +8,14 @@ export default function WorkationCard({ workation }: { workation: Workation }) {
 
   return (
     <div className="flex flex-col overflow-hidden rounded-[22px] bg-white/60">
-      <div className="relative h-[200px]">
-        <PlaceholderPhoto caption={workation.photoCaption} />
+      <div className="relative h-[400px]">
+        <PhotoCarousel
+          photos={workation.photos}
+          fallbackCaption={workation.photoCaption}
+          alt={workation.photoCaption}
+          arrows
+          sizes="(max-width: 768px) 100vw, 33vw"
+        />
         <div className="absolute left-3 top-3 flex flex-wrap gap-2">
           {workation.pilot && (
             <span className="rounded-full bg-terracotta px-3 py-1 text-[11px] font-bold tracking-wide text-cream">

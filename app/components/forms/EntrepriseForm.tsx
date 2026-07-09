@@ -8,7 +8,7 @@ export default function EntrepriseForm() {
     <FacadeForm
       submitLabel="Demander une proposition"
       successTitle="Demande envoyée !"
-      successBody="Merci pour votre demande — notre équipe revient vers vous sous 48h pour échanger sur votre projet."
+      successBody="Merci pour votre demande - notre équipe revient vers vous sous 48h pour échanger sur votre projet."
     >
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <TextField label="Nom" name="nom" />

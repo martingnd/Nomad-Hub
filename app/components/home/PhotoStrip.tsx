@@ -8,11 +8,11 @@ const TILES = [
   },
   {
     key: "coliving",
-    caption: "Déposer une photo — salon coliving lumineux",
+    caption: "Déposer une photo - salon coliving lumineux",
   },
   {
     key: "pool",
-    caption: "Déposer une photo — piscine, télétravailleurs",
+    caption: "Déposer une photo - piscine, télétravailleurs",
   },
 ];
 

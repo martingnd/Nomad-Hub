@@ -31,7 +31,10 @@ export default function FeatureGrid() {
     <div className="relative bg-cream py-14 md:py-[72px]">
       <BackgroundDecor items={DECOR} />
       <div className="relative mx-auto max-w-site px-6 md:px-12">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <h2 className="font-serif text-2xl font-bold text-brown md:text-[28px]">
+          Pourquoi choisir Nomad&apos;Hub ?
+        </h2>
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {/* Hébergements work-ready */}
           <div className="flex min-h-[260px] flex-col gap-[18px] rounded-[22px] bg-brown p-7">
             <IconBadge borderColor="rgba(247,241,232,0.4)">

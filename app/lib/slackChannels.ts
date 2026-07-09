@@ -99,7 +99,7 @@ export const SLACK_CHANNELS: ChannelRow[] = [
     channel: "#nh-show-your-work",
     explorer: { access: "none" },
     pro: { access: "none" },
-    business: { access: "full", note: "exclusif — visibilité de vos projets" },
+    business: { access: "full", note: "exclusif - visibilité de vos projets" },
   },
   {
     category: "Business & opportunités",
@@ -107,7 +107,7 @@ export const SLACK_CHANNELS: ChannelRow[] = [
     isNew: true,
     explorer: { access: "none" },
     pro: { access: "none" },
-    business: { access: "full", note: "exclusif — missions & appels d'offres qualifiés" },
+    business: { access: "full", note: "exclusif - missions & appels d'offres qualifiés" },
   },
   {
     category: "Productivité & remote work",

@@ -19,7 +19,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nomad-hub.fr"),
   title: {
-    default: "Nomad'Hub — Workations en France | Work. Connect. Explore.",
+    default: "Nomad'Hub - Workations en France | Work. Connect. Explore.",
     template: "%s",
   },
   description:

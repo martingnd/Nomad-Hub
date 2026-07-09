@@ -93,7 +93,7 @@ export const FAQ: FaqCategory[] = [
       {
         question: "Puis-je proposer mon bien comme hébergement partenaire ?",
         answer:
-          "Le programme hébergeurs partenaires n'est pas encore ouvert en V1. Il sera formalisé et lancé en V2 — revenez bientôt pour plus d'informations.",
+          "Le programme hébergeurs partenaires n'est pas encore ouvert en V1. Il sera formalisé et lancé en V2 - revenez bientôt pour plus d'informations.",
       },
     ],
   },

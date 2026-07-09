@@ -21,5 +21,5 @@ export default function AccessBadge({ access, note }: { access: Access; note?: s
       </div>
     );
   }
-  return <span className="text-brown/25">—</span>;
+  return <span className="text-brown/25">-</span>;
 }

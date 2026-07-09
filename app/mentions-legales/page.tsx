@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LegalLayout from "../components/layout/LegalLayout";
 
 export const metadata: Metadata = {
-  title: "Mentions légales — Nomad'Hub",
+  title: "Mentions légales - Nomad'Hub",
   description: "Mentions légales du site Nomad'Hub.",
 };
 
