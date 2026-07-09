@@ -100,7 +100,7 @@ export const WORKATIONS: Workation[] = [
       { day: "Jour 6", title: "Dernière matinée & départ", text: "Matinée de travail libre, brunch de clôture, check-out en douceur." },
     ],
     cancellation: CANCELLATION_DEFAULT,
-    photoCaption: "Photo à venir - Villa des Dunes, terrasse et jardin",
+    photoCaption: "Villa des Dunes, terrasse et jardin",
     photos: [
       "/images/villa-des-dunes.avif",
       "/images/villa-des-dunes-2.avif",
@@ -158,7 +158,7 @@ export const WORKATIONS: Workation[] = [
       { day: "Jour 6", title: "Départ", text: "Matinée libre, check-out." },
     ],
     cancellation: CANCELLATION_DEFAULT,
-    photoCaption: "Photo à venir - L'Annexe des 3 Moulins, studio et extérieur",
+    photoCaption: "L'Annexe des 3 Moulins, studio et extérieur",
     photos: ["/images/annexe-3-moulins.jpg"],
   },
   {
