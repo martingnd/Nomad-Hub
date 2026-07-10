@@ -246,7 +246,14 @@ export const WORKATIONS: Workation[] = [
       { day: "Jour 6", title: "Départ", text: "Matinée libre, check-out." },
     ],
     cancellation: CANCELLATION_DEFAULT,
-    photoCaption: "Photo à venir - Maison de campagne, lisière de forêt",
+    photoCaption: "Maison de campagne, lisière de forêt",
+    photos: [
+      "/images/oree-des-bois-1.avif",
+      "/images/oree-des-bois-2.avif",
+      "/images/oree-des-bois-3.avif",
+      "/images/oree-des-bois-4.avif",
+      "/images/oree-des-bois-5.avif",
+    ],
   },
   {
     slug: "parenthese-bordelaise-parempuyre",
