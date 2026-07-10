@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageShell from "../components/layout/PageShell";
 import PageHero from "../components/layout/PageHero";
 import EntrepriseForm from "../components/forms/EntrepriseForm";
 import BackgroundDecor from "../components/decor/BackgroundDecor";
-import PlaceholderPhoto from "../components/home/PlaceholderPhoto";
 import { ProfileIcon, LaptopIcon, GrowthIcon, ChatIcon } from "../components/decor/icons";
 import { EntreprisesHeroIllustration } from "../components/decor/HeroIllustrations";
 
@@ -75,8 +75,14 @@ export default function EntreprisesPage() {
               Contactez-nous pour un accompagnement personnalisé : nous revenons vers vous avec une
               proposition adaptée à votre équipe, votre budget et votre calendrier.
             </p>
-            <div className="mt-8 flex-1 overflow-hidden rounded-[22px]">
-              <PlaceholderPhoto caption="Photo à venir - équipe en workation" />
+            <div className="relative mt-8 min-h-[280px] flex-1 overflow-hidden rounded-[22px]">
+              <Image
+                src="/images/entreprises-equipe.png"
+                alt="Équipe en workation, terrasse avec vue sur la mer et les montagnes"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
           </div>
           <div className="rounded-[24px] bg-white/70 p-8">
