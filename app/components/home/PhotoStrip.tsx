@@ -8,11 +8,13 @@ const TILES = [
   },
   {
     key: "coliving",
-    caption: "Déposer une photo - salon coliving lumineux",
+    src: "/images/photostrip-coliving.png",
+    alt: "Salon coliving lumineux avec cuisine ouverte, télétravailleurs installés à table",
   },
   {
     key: "pool",
-    caption: "Déposer une photo - piscine, télétravailleurs",
+    src: "/images/photostrip-pool.png",
+    alt: "Groupe de télétravailleurs autour d'une table avec ordinateurs portables, au bord d'une piscine",
   },
 ];
 
