@@ -414,7 +414,14 @@ export const WORKATIONS: Workation[] = [
       { day: "Jour 6", title: "Départ", text: "Matinée libre, check-out." },
     ],
     cancellation: CANCELLATION_DEFAULT,
-    photoCaption: "Photo à venir - Villa, jardin arboré",
+    photoCaption: "Villa, jardin arboré",
+    photos: [
+      "/images/villa-maegiu-1.avif",
+      "/images/villa-maegiu-2.avif",
+      "/images/villa-maegiu-3.avif",
+      "/images/villa-maegiu-4.avif",
+      "/images/villa-maegiu-5.avif",
+    ],
   },
   {
     slug: "longere-perigord-placeholder",
