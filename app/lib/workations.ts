@@ -330,7 +330,14 @@ export const WORKATIONS: Workation[] = [
       { day: "Jour 6", title: "Départ", text: "Matinée libre, check-out." },
     ],
     cancellation: CANCELLATION_DEFAULT,
-    photoCaption: "Photo à venir - Villa, ambiance Hossegor",
+    photoCaption: "Villa, ambiance Hossegor",
+    photos: [
+      "/images/unique-hossegor-1.avif",
+      "/images/unique-hossegor-2.avif",
+      "/images/unique-hossegor-3.avif",
+      "/images/unique-hossegor-4.avif",
+      "/images/unique-hossegor-5.avif",
+    ],
   },
   {
     slug: "le-loft-lorient-centre",
