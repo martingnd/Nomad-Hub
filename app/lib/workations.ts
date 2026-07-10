@@ -491,7 +491,14 @@ export const WORKATIONS: Workation[] = [
       { day: "Jour 6", title: "Départ", text: "Matinée libre, check-out." },
     ],
     cancellation: CANCELLATION_DEFAULT,
-    photoCaption: "Photo à venir - Gîte rénové, campagne bourguignonne",
+    photoCaption: "Gîte rénové, campagne bourguignonne",
+    photos: [
+      "/images/gite-lavoir-1.avif",
+      "/images/gite-lavoir-2.avif",
+      "/images/gite-lavoir-3.avif",
+      "/images/gite-lavoir-4.avif",
+      "/images/gite-lavoir-5.avif",
+    ],
   },
 ];
 
