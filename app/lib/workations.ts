@@ -160,9 +160,9 @@ export const WORKATIONS: Workation[] = [
     cancellation: CANCELLATION_DEFAULT,
     photoCaption: "L'Annexe des 3 Moulins, studio et extérieur",
     photos: [
+      "/images/annexe-3-moulins-4.avif",
       "/images/annexe-3-moulins-2.avif",
       "/images/annexe-3-moulins.jpg",
-      "/images/annexe-3-moulins-4.avif",
       "/images/annexe-3-moulins-3.avif",
       "/images/annexe-3-moulins-5.avif",
     ],
@@ -290,11 +290,11 @@ export const WORKATIONS: Workation[] = [
     cancellation: CANCELLATION_DEFAULT,
     photoCaption: "Maison 4 étoiles, vignobles à proximité",
     photos: [
+      "/images/parenthese-bordelaise-5.avif",
       "/images/parenthese-bordelaise-1.avif",
       "/images/parenthese-bordelaise-2.avif",
       "/images/parenthese-bordelaise-3.avif",
       "/images/parenthese-bordelaise-4.avif",
-      "/images/parenthese-bordelaise-5.avif",
     ],
   },
   {
