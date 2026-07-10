@@ -5,6 +5,7 @@ import PageHero from "../components/layout/PageHero";
 import SlackMatrix from "../components/communaute/SlackMatrix";
 import BackgroundDecor from "../components/decor/BackgroundDecor";
 import { ChatIcon, ProfileIcon, GrowthIcon, ThumbsUpIcon } from "../components/decor/icons";
+import { CommunauteHeroIllustration } from "../components/decor/HeroIllustrations";
 
 const DECOR = [
   { Icon: ChatIcon, className: "-left-2 top-4", size: 34, rotate: -6, color: "#4A2F24", opacity: 0.06 },
@@ -32,6 +33,7 @@ export default function CommunautePage() {
         kicker="COMMUNAUTÉ"
         title="Une communauté, pas juste un séjour."
         subtitle="Le Slack Nomad'Hub rassemble des freelances, indépendants et équipes remote partout en France - organisé par catégories, avec un accès qui évolue selon votre abonnement."
+        illustration={<CommunauteHeroIllustration />}
       />
 
       <div className="relative overflow-hidden py-14 md:py-[72px]">

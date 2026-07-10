@@ -4,6 +4,7 @@ import PageHero from "../components/layout/PageHero";
 import PlaceholderPhoto from "../components/home/PlaceholderPhoto";
 import BackgroundDecor from "../components/decor/BackgroundDecor";
 import { ProfileIcon, StarIcon, HeartIcon, GrowthIcon } from "../components/decor/icons";
+import { AProposHeroIllustration } from "../components/decor/HeroIllustrations";
 
 const DECOR = [
   { Icon: HeartIcon, className: "-left-2 top-6", size: 32, rotate: -8, color: "#4A2F24", opacity: 0.06 },
@@ -30,6 +31,7 @@ export default function AProposPage() {
         kicker="À PROPOS"
         title="Réinventer le travail à distance en France."
         subtitle="Nomad'Hub est né d'un constat simple : le télétravail isolé a un coût humain que les outils numériques ne résolvent pas."
+        illustration={<AProposHeroIllustration />}
       />
 
       <div className="relative overflow-hidden py-14 md:py-[72px]">

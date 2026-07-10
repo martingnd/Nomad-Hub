@@ -4,6 +4,7 @@ import PageHero from "../components/layout/PageHero";
 import FaqAccordion from "../components/faq/FaqAccordion";
 import BackgroundDecor from "../components/decor/BackgroundDecor";
 import { ChatIcon, BookIcon } from "../components/decor/icons";
+import { FaqHeroIllustration } from "../components/decor/HeroIllustrations";
 import { FAQ } from "@/lib/faq";
 
 const DECOR = [
@@ -36,6 +37,7 @@ export default function FaqPage() {
         kicker="FAQ"
         title="Questions fréquentes"
         subtitle="Tout ce qu'il faut savoir sur les workations, la communauté et les abonnements Nomad'Hub."
+        illustration={<FaqHeroIllustration />}
       />
       <div className="relative overflow-hidden py-14 md:py-[72px]">
         <BackgroundDecor items={DECOR} />

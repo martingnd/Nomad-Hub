@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageShell from "../components/layout/PageShell";
 import PageHero from "../components/layout/PageHero";
 import FranceMap from "../components/carte/FranceMap";
+import { CarteHeroIllustration } from "../components/decor/HeroIllustrations";
 import { WORKATIONS } from "@/lib/workations";
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function CartePage() {
         kicker="CARTE INTERACTIVE"
         title="Nos workations partout en France"
         subtitle="Explorez la carte et cliquez sur un point pour découvrir l'hébergement correspondant."
+        illustration={<CarteHeroIllustration />}
       />
 
       <div className="mx-auto max-w-site px-6 py-14 md:px-12 md:py-[72px]">

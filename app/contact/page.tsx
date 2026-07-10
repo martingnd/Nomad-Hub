@@ -5,6 +5,7 @@ import PageHero from "../components/layout/PageHero";
 import ContactForm from "../components/forms/ContactForm";
 import BackgroundDecor from "../components/decor/BackgroundDecor";
 import { MailIcon, ChatIcon } from "../components/decor/icons";
+import { ContactHeroIllustration } from "../components/decor/HeroIllustrations";
 
 const DECOR = [
   { Icon: MailIcon, className: "-left-2 top-4", size: 30, rotate: -6, color: "#4A2F24", opacity: 0.06 },
@@ -19,7 +20,11 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <PageShell>
-      <PageHero kicker="CONTACT" title="Une question ? Écrivez-nous." />
+      <PageHero
+        kicker="CONTACT"
+        title="Une question ? Écrivez-nous."
+        illustration={<ContactHeroIllustration />}
+      />
 
       <div className="relative overflow-hidden py-14 md:py-[72px]">
         <BackgroundDecor items={DECOR} />

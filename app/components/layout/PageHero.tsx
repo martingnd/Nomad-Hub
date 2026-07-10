@@ -5,16 +5,18 @@ export default function PageHero({
   title,
   subtitle,
   cta,
+  illustration,
 }: {
   kicker: string;
   title: string;
   subtitle?: string;
   cta?: React.ReactNode;
+  illustration?: React.ReactNode;
 }) {
   return (
     <div className="relative h-[640px] w-full overflow-hidden">
       <div className="absolute inset-0">
-        <PlaceholderPhoto caption="Photo à venir" />
+        {illustration ?? <PlaceholderPhoto caption="Photo à venir" />}
       </div>
       <div className="pointer-events-none absolute inset-0 bg-[rgba(31,20,15,0.18)]" />
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(31,20,15,0.05)_0%,rgba(31,20,15,0.45)_75%,rgba(31,20,15,0.7)_100%)]" />

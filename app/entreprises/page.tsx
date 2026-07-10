@@ -5,6 +5,7 @@ import EntrepriseForm from "../components/forms/EntrepriseForm";
 import BackgroundDecor from "../components/decor/BackgroundDecor";
 import PlaceholderPhoto from "../components/home/PlaceholderPhoto";
 import { ProfileIcon, LaptopIcon, GrowthIcon, ChatIcon } from "../components/decor/icons";
+import { EntreprisesHeroIllustration } from "../components/decor/HeroIllustrations";
 
 const DECOR = [
   { Icon: LaptopIcon, className: "-left-2 top-2", size: 34, rotate: -6, color: "#4A2F24", opacity: 0.06 },
@@ -31,6 +32,7 @@ export default function EntreprisesPage() {
         kicker="POUR ENTREPRISES"
         title="Une alternative aux séminaires classiques."
         subtitle="Workations d'équipe, retraites de travail et onboarding remote pour startups, agences digitales, PME remote et équipes hybrides."
+        illustration={<EntreprisesHeroIllustration />}
       />
 
       <div className="relative overflow-hidden py-14 md:py-[72px]">

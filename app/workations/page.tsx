@@ -5,6 +5,7 @@ import PageHero from "../components/layout/PageHero";
 import WorkationsExplorer from "../components/workations/WorkationsExplorer";
 import BackgroundDecor from "../components/decor/BackgroundDecor";
 import { PalmIcon, CompassIcon, BackpackIcon } from "../components/decor/icons";
+import { WorkationsHeroIllustration } from "../components/decor/HeroIllustrations";
 import { WORKATIONS } from "@/lib/workations";
 
 const DECOR = [
@@ -26,6 +27,7 @@ export default function WorkationsPage() {
         kicker="CATALOGUE"
         title="Nos workations en France"
         subtitle="Des hébergements sélectionnés et work-ready, du solo freelance à l'équipe complète. Réservez votre place ou candidatez aux séjours en cours de constitution."
+        illustration={<WorkationsHeroIllustration />}
         cta={
           <Link
             href="/carte"

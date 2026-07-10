@@ -4,6 +4,7 @@ import PageShell from "../components/layout/PageShell";
 import PageHero from "../components/layout/PageHero";
 import { LaptopIcon, ChatIcon, CalendarIcon, CompassIcon } from "../components/decor/icons";
 import BackgroundDecor from "../components/decor/BackgroundDecor";
+import { ConceptHeroIllustration } from "../components/decor/HeroIllustrations";
 
 const PROBLEM_DECOR = [
   { Icon: LaptopIcon, className: "right-[6%] top-6", size: 34, rotate: -6, color: "#4A2F24", opacity: 0.06 },
@@ -63,6 +64,7 @@ export default function ConceptPage() {
         kicker="LE CONCEPT"
         title="Travailler autrement, sans sacrifier la performance."
         subtitle="Des lieux sélectionnés, une communauté qualifiée, une expérience pensée pour travailler mieux."
+        illustration={<ConceptHeroIllustration />}
       />
 
       <div className="relative overflow-hidden mx-auto max-w-site px-6 py-14 md:px-12 md:py-[72px]">

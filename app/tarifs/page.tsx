@@ -5,6 +5,7 @@ import PricingGrid from "../components/tarifs/PricingGrid";
 import ReassuranceBand from "../components/tarifs/ReassuranceBand";
 import BackgroundDecor from "../components/decor/BackgroundDecor";
 import { PalmIcon, BackpackIcon, StarIcon, BuildingIcon } from "../components/decor/icons";
+import { TarifsHeroIllustration } from "../components/decor/HeroIllustrations";
 
 const DECOR = [
   { Icon: PalmIcon, className: "-left-2 top-4", size: 38, rotate: -8, color: "#4A2F24", opacity: 0.06 },
@@ -26,6 +27,7 @@ export default function TarifsPage() {
         kicker="TARIFS"
         title="Rejoignez la communauté Nomad'Hub"
         subtitle="Choisissez l'offre qui vous correspond et accédez à une communauté de professionnels du remote partout en France."
+        illustration={<TarifsHeroIllustration />}
       />
       <div className="relative overflow-hidden py-14 md:py-[72px]">
         <BackgroundDecor items={DECOR} />
