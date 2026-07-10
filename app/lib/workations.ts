@@ -206,9 +206,9 @@ export const WORKATIONS: Workation[] = [
     cancellation: CANCELLATION_DEFAULT,
     photoCaption: "Mas provençal, jacuzzi et jardin",
     photos: [
+      "/images/mas-jacuzzi-3.avif",
       "/images/mas-jacuzzi-1.avif",
       "/images/mas-jacuzzi-2.avif",
-      "/images/mas-jacuzzi-3.avif",
       "/images/mas-jacuzzi-4.avif",
       "/images/mas-jacuzzi-5.avif",
     ],
