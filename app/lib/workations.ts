@@ -204,7 +204,14 @@ export const WORKATIONS: Workation[] = [
       { day: "Jour 6", title: "Départ", text: "Matinée libre, check-out." },
     ],
     cancellation: CANCELLATION_DEFAULT,
-    photoCaption: "Photo à venir - Mas provençal, jacuzzi et jardin",
+    photoCaption: "Mas provençal, jacuzzi et jardin",
+    photos: [
+      "/images/mas-jacuzzi-1.avif",
+      "/images/mas-jacuzzi-2.avif",
+      "/images/mas-jacuzzi-3.avif",
+      "/images/mas-jacuzzi-4.avif",
+      "/images/mas-jacuzzi-5.avif",
+    ],
   },
   {
     slug: "oree-des-bois-villefranche-sur-cher",
