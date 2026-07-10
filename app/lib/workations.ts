@@ -160,10 +160,10 @@ export const WORKATIONS: Workation[] = [
     cancellation: CANCELLATION_DEFAULT,
     photoCaption: "L'Annexe des 3 Moulins, studio et extérieur",
     photos: [
-      "/images/annexe-3-moulins.jpg",
       "/images/annexe-3-moulins-2.avif",
-      "/images/annexe-3-moulins-3.avif",
+      "/images/annexe-3-moulins.jpg",
       "/images/annexe-3-moulins-4.avif",
+      "/images/annexe-3-moulins-3.avif",
       "/images/annexe-3-moulins-5.avif",
     ],
   },
@@ -206,11 +206,11 @@ export const WORKATIONS: Workation[] = [
     cancellation: CANCELLATION_DEFAULT,
     photoCaption: "Mas provençal, jacuzzi et jardin",
     photos: [
+      "/images/mas-jacuzzi-5.avif",
+      "/images/mas-jacuzzi-4.avif",
       "/images/mas-jacuzzi-3.avif",
       "/images/mas-jacuzzi-1.avif",
       "/images/mas-jacuzzi-2.avif",
-      "/images/mas-jacuzzi-4.avif",
-      "/images/mas-jacuzzi-5.avif",
     ],
   },
   {
@@ -248,11 +248,11 @@ export const WORKATIONS: Workation[] = [
     cancellation: CANCELLATION_DEFAULT,
     photoCaption: "Maison de campagne, lisière de forêt",
     photos: [
-      "/images/oree-des-bois-1.avif",
+      "/images/oree-des-bois-5.avif",
+      "/images/oree-des-bois-4.avif",
       "/images/oree-des-bois-2.avif",
       "/images/oree-des-bois-3.avif",
-      "/images/oree-des-bois-4.avif",
-      "/images/oree-des-bois-5.avif",
+      "/images/oree-des-bois-1.avif",
     ],
   },
   {
@@ -332,11 +332,11 @@ export const WORKATIONS: Workation[] = [
     cancellation: CANCELLATION_DEFAULT,
     photoCaption: "Villa, ambiance Hossegor",
     photos: [
-      "/images/unique-hossegor-1.avif",
+      "/images/unique-hossegor-5.avif",
       "/images/unique-hossegor-2.avif",
       "/images/unique-hossegor-3.avif",
       "/images/unique-hossegor-4.avif",
-      "/images/unique-hossegor-5.avif",
+      "/images/unique-hossegor-1.avif",
     ],
   },
   {
@@ -374,11 +374,11 @@ export const WORKATIONS: Workation[] = [
     cancellation: CANCELLATION_DEFAULT,
     photoCaption: "Loft urbain, Lorient centre",
     photos: [
-      "/images/le-loft-lorient-1.avif",
-      "/images/le-loft-lorient-2.avif",
-      "/images/le-loft-lorient-3.avif",
-      "/images/le-loft-lorient-4.avif",
       "/images/le-loft-lorient-5.avif",
+      "/images/le-loft-lorient-3.avif",
+      "/images/le-loft-lorient-2.avif",
+      "/images/le-loft-lorient-4.avif",
+      "/images/le-loft-lorient-1.avif",
     ],
   },
   {
@@ -493,11 +493,11 @@ export const WORKATIONS: Workation[] = [
     cancellation: CANCELLATION_DEFAULT,
     photoCaption: "Gîte rénové, campagne bourguignonne",
     photos: [
+      "/images/gite-lavoir-5.avif",
       "/images/gite-lavoir-1.avif",
+      "/images/gite-lavoir-4.avif",
       "/images/gite-lavoir-2.avif",
       "/images/gite-lavoir-3.avif",
-      "/images/gite-lavoir-4.avif",
-      "/images/gite-lavoir-5.avif",
     ],
   },
 ];
