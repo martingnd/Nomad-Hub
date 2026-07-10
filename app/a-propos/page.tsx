@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageShell from "../components/layout/PageShell";
 import PageHero from "../components/layout/PageHero";
 import PlaceholderPhoto from "../components/home/PlaceholderPhoto";
@@ -94,8 +95,14 @@ export default function AProposPage() {
           L&apos;équipe fondatrice
         </h2>
         <div className="mt-8 flex flex-col items-center gap-4 rounded-[22px] bg-beige p-10 text-center sm:flex-row sm:text-left">
-          <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-full">
-            <PlaceholderPhoto caption="Photo" />
+          <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-full">
+            <Image
+              src="/images/fondateur.jpeg"
+              alt="Fondateur de Nomad'Hub"
+              fill
+              sizes="96px"
+              className="object-cover"
+            />
           </div>
           <p className="text-[14.5px] leading-relaxed text-brown/70">
             Présentation du fondateur / de la fondatrice à venir - cet espace accueillera bientôt le
