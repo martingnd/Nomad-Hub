@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import PageShell from "../components/layout/PageShell";
 import PageHero from "../components/layout/PageHero";
-import PlaceholderPhoto from "../components/home/PlaceholderPhoto";
 import BackgroundDecor from "../components/decor/BackgroundDecor";
 import { ProfileIcon, StarIcon, HeartIcon, GrowthIcon } from "../components/decor/icons";
 import { AProposHeroIllustration } from "../components/decor/HeroIllustrations";
@@ -38,33 +37,28 @@ export default function AProposPage() {
       <div className="relative overflow-hidden py-14 md:py-[72px]">
         <BackgroundDecor items={DECOR} />
         <div className="relative mx-auto max-w-site px-6 md:px-12">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1fr]">
-          <div>
-            <h2 className="font-serif text-2xl font-bold text-brown md:text-[28px]">
-              Notre histoire
-            </h2>
-            <p className="mt-4 text-[15px] leading-[1.7] text-brown/75">
-              Nomad&apos;Hub est parti d&apos;un constat partagé par des milliers de freelances,
-              indépendants et télétravailleurs en France : travailler à distance, c&apos;est souvent
-              travailler seul, dans un logement pas toujours adapté, sans le cadre ni le collectif
-              qui font avancer.
-            </p>
-            <p className="mt-4 text-[15px] leading-[1.7] text-brown/75">
-              Nous avons voulu créer une autre manière de travailler en mobilité : des lieux
-              sélectionnés et work-ready, une communauté qualifiée, et des séjours pensés comme de
-              vraies parenthèses productives - pas juste des vacances avec un ordinateur.
-            </p>
-            <h2 className="mt-10 font-serif text-2xl font-bold text-brown md:text-[28px]">
-              Notre mission
-            </h2>
-            <p className="mt-4 text-[15px] leading-[1.7] text-brown/75">
-              Réinventer le travail à distance en France : donner aux professionnels du remote un
-              cadre à la hauteur de leur exigence, et créer une communauté qui compte vraiment.
-            </p>
-          </div>
-          <div className="h-[360px] overflow-hidden rounded-[24px] lg:h-full">
-            <PlaceholderPhoto caption="Photo à venir - l'équipe Nomad'Hub" />
-          </div>
+        <div className="mx-auto max-w-[720px]">
+          <h2 className="font-serif text-2xl font-bold text-brown md:text-[28px]">
+            Notre histoire
+          </h2>
+          <p className="mt-4 text-[15px] leading-[1.7] text-brown/75">
+            Nomad&apos;Hub est parti d&apos;un constat partagé par des milliers de freelances,
+            indépendants et télétravailleurs en France : travailler à distance, c&apos;est souvent
+            travailler seul, dans un logement pas toujours adapté, sans le cadre ni le collectif
+            qui font avancer.
+          </p>
+          <p className="mt-4 text-[15px] leading-[1.7] text-brown/75">
+            Nous avons voulu créer une autre manière de travailler en mobilité : des lieux
+            sélectionnés et work-ready, une communauté qualifiée, et des séjours pensés comme de
+            vraies parenthèses productives - pas juste des vacances avec un ordinateur.
+          </p>
+          <h2 className="mt-10 font-serif text-2xl font-bold text-brown md:text-[28px]">
+            Notre mission
+          </h2>
+          <p className="mt-4 text-[15px] leading-[1.7] text-brown/75">
+            Réinventer le travail à distance en France : donner aux professionnels du remote un
+            cadre à la hauteur de leur exigence, et créer une communauté qui compte vraiment.
+          </p>
         </div>
         </div>
       </div>
@@ -105,8 +99,7 @@ export default function AProposPage() {
             />
           </div>
           <p className="text-[14.5px] leading-relaxed text-brown/70">
-            Présentation du fondateur / de la fondatrice à venir - cet espace accueillera bientôt le
-            portrait et le parcours de l&apos;équipe à l&apos;origine de Nomad&apos;Hub.
+            Martin Guinard, fondateur de Nomad&apos;Hub.
           </p>
         </div>
       </div>
