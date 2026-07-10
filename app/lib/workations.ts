@@ -288,7 +288,14 @@ export const WORKATIONS: Workation[] = [
       { day: "Jour 6", title: "Départ", text: "Matinée libre, check-out." },
     ],
     cancellation: CANCELLATION_DEFAULT,
-    photoCaption: "Photo à venir - Maison 4 étoiles, vignobles à proximité",
+    photoCaption: "Maison 4 étoiles, vignobles à proximité",
+    photos: [
+      "/images/parenthese-bordelaise-1.avif",
+      "/images/parenthese-bordelaise-2.avif",
+      "/images/parenthese-bordelaise-3.avif",
+      "/images/parenthese-bordelaise-4.avif",
+      "/images/parenthese-bordelaise-5.avif",
+    ],
   },
   {
     slug: "unique-coeur-hossegor",
