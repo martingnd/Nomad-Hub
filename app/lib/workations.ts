@@ -159,7 +159,13 @@ export const WORKATIONS: Workation[] = [
     ],
     cancellation: CANCELLATION_DEFAULT,
     photoCaption: "L'Annexe des 3 Moulins, studio et extérieur",
-    photos: ["/images/annexe-3-moulins.jpg"],
+    photos: [
+      "/images/annexe-3-moulins.jpg",
+      "/images/annexe-3-moulins-2.avif",
+      "/images/annexe-3-moulins-3.avif",
+      "/images/annexe-3-moulins-4.avif",
+      "/images/annexe-3-moulins-5.avif",
+    ],
   },
   {
     slug: "mas-jacuzzi-cote-azur-la-crau",
