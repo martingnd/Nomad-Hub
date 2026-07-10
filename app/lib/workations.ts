@@ -372,7 +372,14 @@ export const WORKATIONS: Workation[] = [
       { day: "Jour 6", title: "Départ", text: "Matinée libre, check-out." },
     ],
     cancellation: CANCELLATION_DEFAULT,
-    photoCaption: "Photo à venir - Loft urbain, Lorient centre",
+    photoCaption: "Loft urbain, Lorient centre",
+    photos: [
+      "/images/le-loft-lorient-1.avif",
+      "/images/le-loft-lorient-2.avif",
+      "/images/le-loft-lorient-3.avif",
+      "/images/le-loft-lorient-4.avif",
+      "/images/le-loft-lorient-5.avif",
+    ],
   },
   {
     slug: "villa-maegiu-tigeaux",
